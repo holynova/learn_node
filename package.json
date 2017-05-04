@@ -10,6 +10,8 @@
   "author": "sym <ymsang@mo9.com>",
   "license": "ISC",
   "dependencies": {
-    "koa": "^2.0.0"
+    "koa": "^2.2.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.1.1"
   }
 }
