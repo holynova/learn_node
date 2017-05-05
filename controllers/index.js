@@ -13,9 +13,9 @@ const fn_signin = async (ctx, next) => {
   let password = ctx.request.body.password || '';
   log(`用户名${name},密码${password}`);
   if (password === 'sang') {
-    ctx.response.body = `登陆成功,欢迎${name}回来`;
+    ctx.response.body = `<h2>登陆成功,欢迎${name}回来</h2>`;
   } else {
-    ctx.response.body = `登陆失败 <a href="/">重新登陆</a>`;
+    ctx.response.body = `<p>登陆失败 <a href="/">重新登陆</a></p>`;
   }
 };
 

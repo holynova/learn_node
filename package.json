@@ -12,6 +12,14 @@
   "dependencies": {
     "koa": "^2.2.0",
     "koa-bodyparser": "^4.2.0",
-    "koa-router": "^7.1.1"
+    "koa-router": "^7.1.1",
+    "mysql": "^2.13.0",
+    "nunjucks": "^3.0.0",
+    "sequelize": "^3.30.4"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0",
+    "faker-zh-cn": "^0.5.9",
+    "koa-logger": "^2.0.1"
   }
 }
