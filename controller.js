@@ -17,8 +17,6 @@ const addMapping = (router, mapping) => {
 };
 
 const addControllers = (router, dir) => {
-  // let dirname = '';
-  // let files = fs.readdirSync(`${dirname}/controllers`);
   log(`${__dirname}/${dir}`);
   let files = fs.readdirSync(`${__dirname}/${dir}`);
   let js_files = files.filter((f) => {
@@ -32,8 +30,6 @@ const addControllers = (router, dir) => {
 
 module.exports = (dir = 'controllers') => {
   const router = require('koa-router')();
-  // const controllers_dir = dir || 'controllers';
-  // console.log('controllers_dir------->', controllers_dir);
   addControllers(router, dir);
   return router.routes();
 }
