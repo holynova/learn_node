@@ -4,7 +4,7 @@ const Sequelize = require('sequelize');
 const News = db.defineModel('news', {
   title: Sequelize.STRING,
   author: Sequelize.STRING,
-  content: Sequelize.BLOB,
+  content: Sequelize.TEXT,
 });
 
 module.exports = News;

@@ -37,6 +37,7 @@ const defineModel = (name, attributes) => {
   }
   return sequelize.define(name, attrs, {
     timestamps: false,
+    tableName: name,
     hooks: {
       beforeValidate: function (obj) {
         let now = Date.now();
